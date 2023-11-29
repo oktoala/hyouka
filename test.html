@@ -1,0 +1,74 @@
+<head>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+    @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    * {
+      font-family: "Montserrat", sans-serif !important;
+    }
+
+    .reveal {
+      position: relative;
+      font-size: 6em;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #fff;
+      color: red;
+      letter-spacing: 0.5em;
+    }
+
+    span {
+      color: #e5e5e5;
+      mix-blend-mode: lighten;
+    }
+
+    .reveal:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 100%;
+      border-radius: 50%;
+      background: #000;
+      animation: reveal 6s linear infinite;
+    }
+
+    @keyframes reveal {
+      0% {
+        left: -50px;
+      }
+      50% {
+        left: calc(100% - 150px);
+      }
+      100% {
+        left: -50px;
+      }
+    }
+
+    .credits a {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      color: #000;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<div class="reveal">
+  <span>Reveal</span>
+</div>
+<div class="credits">
+  <a href="http://www.aniket.co" target="_blank">aniket.co</a>
+</div>

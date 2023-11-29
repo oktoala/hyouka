@@ -1,0 +1,124 @@
+.bubble {
+  animation: floatUp 10s infinite ease-out;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh);
+  }
+
+  100% {
+    transform: translateY(-600px);
+  }
+}
+
+/*Green Ribbon 1 */
+
+.greenRibbon1 {
+  position: absolute;
+  z-index: 3;
+  top: 42px;
+  right: 204px;
+  rotate: -45deg;
+  animation: greenRibbon1 1s infinite linear;
+}
+
+@keyframes greenRibbon1 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(20px, -10px);
+    opacity: 0;
+  }
+}
+
+/*Purple Ribbon 1*/
+.purpleRibbon1 {
+  position: absolute;
+  z-index: 3;
+  top: 83px;
+  right: 151px;
+  rotate: -40deg;
+  animation: purpleRibbon1 1s infinite linear;
+}
+
+@keyframes purpleRibbon1 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(40px, -10px);
+    opacity: 0;
+  }
+}
+
+/*Purple Ribbon 2*/
+.purpleRibbon2 {
+  position: absolute;
+  z-index: 3;
+  top: 131px;
+  left: 62px;
+  rotate: 60deg;
+  animation: purpleRibbon2 1s infinite linear;
+}
+
+@keyframes purpleRibbon2 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-40px, -10px);
+    opacity: 0;
+  }
+}
+
+/*Blue Ribbon 1*/
+.blueRibbon1 {
+  position: absolute;
+  z-index: 3;
+  rotate: 37deg;
+  top: 48px;
+  left: 135px;
+  animation: blueRibbon1 1s infinite linear;
+}
+
+@keyframes blueRibbon1 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-40px, -10px);
+    opacity: 0;
+  }
+}
+
+/*Orange Ribbon 1*/
+.orangeRibbon1 {
+  position: absolute;
+  rotate: 48deg;
+  top: 160px;
+  right: 108px;
+  z-index: 3;
+  animation: orangeRibbon1 1s infinite linear;
+}
+
+@keyframes orangeRibbon1 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(40px, 10px);
+    opacity: 0;
+  }
+}
